@@ -22,22 +22,7 @@ namespace Game.NavMesh.Simple
 			if (agent.enabled)
 			{
 				agent.SetDestination(target.position);
-                //Jump 
-                if (agent.isOnOffMeshLink)
-                {
-					//agent.enabled = false;
-					//rb.isKinematic = false;
-                    Debug.DrawLine(
-                        transform.position, 
-                        transform.position +
-						(agent.currentOffMeshLinkData.endPos - agent.currentOffMeshLinkData.startPos).normalized * 100f,
-                        Color.red,
-                        10f);
-
-      //              rb.velocity = (agent.currentOffMeshLinkData.startPos - agent.currentOffMeshLinkData.endPos).normalized *
-						//Vector3.Distance(agent.currentOffMeshLinkData.startPos, agent.currentOffMeshLinkData.endPos) * 100;
-                }
-			}
+                
 		}
 
 		private void FixedUpdate()
