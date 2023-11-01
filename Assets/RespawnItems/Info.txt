@@ -1,0 +1,1 @@
+ This scene demonstrates how to create items that respawn after a delay using a central respawn controller.
