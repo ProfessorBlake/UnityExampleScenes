@@ -118,6 +118,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1b6b85df049d34c8681ac79385aef9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power: 250
-  life: 0.2
-  scale: 1.1
+  power: 400
+  life: 0.15
+  scale: 1.02

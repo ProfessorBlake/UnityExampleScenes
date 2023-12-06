@@ -19,10 +19,11 @@ namespace Game.NavMesh.Simple
 
 		private void Update()
 		{
-			if (agent.enabled)
-			{
-				agent.SetDestination(target.position);
-                
+            if (agent.enabled)
+            {
+                agent.SetDestination(target.position);
+
+            }
 		}
 
 		private void FixedUpdate()
@@ -42,8 +43,8 @@ namespace Game.NavMesh.Simple
         {
             agent.enabled = false;
             rb.isKinematic = false;
-            rb.velocity = Vector3.up;
-            rb.AddExplosionForce(power, position + new Vector3(0,-1,0), 50);
+            rb.velocity = Vector3.up * 4;
+            rb.AddExplosionForce(power, position , 10);
         }
     }
 }
