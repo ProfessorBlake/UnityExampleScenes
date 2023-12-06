@@ -28,7 +28,7 @@ namespace Game.Text
 			//Speed through text
 			if (Input.GetMouseButtonDown(0) || Input.GetKey(KeyCode.Space))
 			{
-				nextTypeTime = Time.time;
+				nextTypeTime = (nextTypeTime + Time.time) / 2;
 			}
 
 			//Advance typedLenght
